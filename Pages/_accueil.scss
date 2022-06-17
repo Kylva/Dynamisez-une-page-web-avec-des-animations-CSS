@@ -1,0 +1,23 @@
+.explorer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $couleur-section-grise;
+
+    &__localisation{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $couleur-fond-ville;
+        height: 50px;
+        input{
+            padding-left: 20px;
+            background-color: $couleur-fond-ville;
+            border: none;
+        }
+    }
+    &__texte{
+        justify-content: center;
+    }
+}
