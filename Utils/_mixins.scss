@@ -1,6 +1,6 @@
 @mixin ombre-exterieur {
-    box-shadow: 2px 10px 15px black;
+    box-shadow: 0px 3px 4px  $couleur-ombres ;
 }
-@mixin ombre-intérieur {
-    box-shadow: inset 2px 2px 10px black;
+@mixin degrader{
+    background: linear-gradient(to bottom right, $couleur-secondaire ,$couleur-primaire);
 }

@@ -1,9 +1,15 @@
 .boutton{
-    width: 250px;
+    color: white;
+    font-size: 14px;
+    font-weight:bold ;
+    width: 220px;
     height: 50px;
     border: none;
     border-radius: 50px;
     margin: auto;
     @include ombre-exterieur;
+    @include degrader;
+   
+    
     
 }

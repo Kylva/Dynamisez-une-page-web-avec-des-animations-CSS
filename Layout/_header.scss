@@ -1,7 +1,14 @@
 .header{
+    position:relative;
+    z-index:1;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 63px;
+    @include ombre-exterieur;
     &__logo{
-        transform: scale(0.4);   
+        width: 150px;
+        height: auto;
+        margin-bottom: 10px; 
     }
 }
