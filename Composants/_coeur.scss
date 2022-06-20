@@ -1,0 +1,19 @@
+.fa-heart{
+    font-size:25px;
+    position:relative ;
+    top: -55px;
+    left: 260px;
+    &:active{
+    color: $couleur-primaire;
+    }  
+}
+.fa-solid{
+    color: white;
+    
+    &:active{
+      color: $couleur-primaire;  
+    }
+}
+.fa-regular{
+    color: black;
+}
