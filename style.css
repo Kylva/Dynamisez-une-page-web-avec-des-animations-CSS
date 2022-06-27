@@ -4,6 +4,8 @@ body {
 }
 
 .boutton {
+  position: relative;
+  z-index: 1;
   color: white;
   font-size: 14px;
   font-weight: bold;
@@ -15,26 +17,38 @@ body {
   box-shadow: 0px 3px 6px rgb(202, 202, 202);
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
+.boutton:hover {
+  transform: scale(1.1);
+}
 
-.fa-heart {
-  font-size: 25px;
+.coeur-remplissage {
+  width: 40px;
+  height: 40px;
   position: relative;
-  top: -55px;
-  left: 260px;
+  top: -65px;
+  right: -270px;
 }
-.fa-heart:active {
-  color: #9356DC;
+.coeur-remplissage__coeur {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  z-index: 1;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 200ms ease-in-out;
 }
-
-.fa-solid {
-  color: white;
+.coeur-remplissage__remplissage-coeur {
+  z-index: 2;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  background-image: url(./images/coeur.png);
 }
-.fa-solid:active {
-  color: #9356DC;
-}
-
-.fa-regular {
-  color: black;
+.coeur-remplissage__remplissage-coeur:active + .coeur-remplissage__coeur {
+  transform: scaleY(1);
+  animation-fill-mode: forwards;
 }
 
 .header {

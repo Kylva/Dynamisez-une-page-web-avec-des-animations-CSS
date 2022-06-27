@@ -1,4 +1,6 @@
 .boutton{
+    position: relative;
+    z-index: 1;
     color: white;
     font-size: 14px;
     font-weight:bold ;
@@ -9,7 +11,7 @@
     margin: auto;
     @include ombre-exterieur;
     @include degrader;
-   
-    
-    
+    &:hover{
+        transform: scale(1.1);
+    }
 }

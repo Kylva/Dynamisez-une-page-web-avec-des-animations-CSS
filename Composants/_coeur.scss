@@ -1,19 +1,31 @@
-.fa-heart{
-    font-size:25px;
-    position:relative ;
-    top: -55px;
-    left: 260px;
-    &:active{
-    color: $couleur-primaire;
-    }  
-}
-.fa-solid{
-    color: white;
-    
-    &:active{
-      color: $couleur-primaire;  
+.coeur-remplissage{
+        width: 40px;
+        height: 40px;
+        position: relative;
+        top: -65px;
+        right: -270px;
+    &__coeur{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        @include degrader;
+        z-index: 1;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: transform 200ms ease-in-out;
+        
+        }
+    &__remplissage-coeur{
+        z-index: 2;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+        background-image: url(./images/coeur.png);
+        &:active + .coeur-remplissage__coeur{
+            transform: scaleY(1);
+            animation-fill-mode: forwards;
+        }
     }
-}
-.fa-regular{
-    color: black;
+    
 }

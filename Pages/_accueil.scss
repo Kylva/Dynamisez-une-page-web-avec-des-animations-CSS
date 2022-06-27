@@ -1,56 +1,59 @@
-.explorer{
+.explorer {
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: $couleur-section-grise;
     padding-bottom: 56px;
 
-    &__localisation{
+    &__localisation {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: $couleur-fond-ville;
         height: 50px;
-        i{
+
+        i {
             margin-left: 25%;
         }
 
-        input{
+        input {
             margin-left: 10px;
             background-color: $couleur-fond-ville;
             border: none;
             color: black;
             font-size: 14px;
             font-weight: bold;
-            
+
         }
     }
-    &__texte{
+
+    &__texte {
         padding-top: 15px;
         justify-content: center;
         margin-left: 45px;
         margin-right: 45px;
-        p{
+
+        p {
             margin-top: -5px;
             margin-bottom: 35px;
             font-size: 16px;
             color: rgb(89, 89, 89);
-            
+
         }
     }
 }
 
-.fonctionnement{
+.fonctionnement {
     margin-top: 45px;
     padding-left: 25px;
     margin-right: 25px;
-    
-    h2{
+
+    h2 {
         margin-bottom: 30px;
     }
 
-    &__card{
+    &__card {
         width: 100%;
         height: 70px;
         display: flex;
@@ -59,99 +62,107 @@
         margin-bottom: 30px;
         border-radius: 20px;
         @include ombre-exterieur;
-        &__numero{
+
+        &__numero {
             padding-top: 5px;
             text-align: center;
-            align-items:flex-end;
+            align-items: flex-end;
             font-size: 14px;
             color: white;
             background-color: $couleur-primaire;
             width: 25px;
             height: 20px;
             border-radius: 20px;
-            position:relative;
+            position: relative;
             left: -12px;
-            
+
 
         }
-        &__logo-texte{
+
+        &__logo-texte {
             display: flex;
             align-items: center;
-            i{
+
+            i {
                 font-size: 18px;
                 opacity: 50%;
                 margin-right: 30px;
             }
-            p{
+
+            p {
                 font-size: 16px;
                 font-weight: bold;
             }
-            
+
         }
     }
 }
 
-.restaurant{
+.restaurant {
     padding-left: 25px;
     padding-right: 25px;
     background-color: $couleur-section-grise;
     margin-top: 70px;
     padding-top: 35px;
     padding-bottom: 50px;
-    &__card{
+
+    &__card {
         @include ombre-exterieur;
         display: flex;
         flex-direction: column;
         overflow: hidden;
         border-radius: 15px;
         height: 250px;
-        margin-bottom:20px ;
-        
-        &__image{
+        margin-bottom: 20px;
+
+        &__image {
             overflow: hidden;
             width: auto;
             height: 180px;
-            .img1{
+
+            .img1 {
                 width: 100%;
                 margin-bottom: 10px;
                 margin: -40px 0px 0px 0px;
             }
-            .img2{
+
+            .img2 {
                 width: 100%;
                 margin-bottom: 10px;
                 margin: -140px 0px 0px 0px;
             }
-            
-             p{
+
+            p {
                 font-size: 14px;
                 text-align: center;
                 font-weight: bold;
                 @include assombrir($couleur-tertiaire);
                 position: relative;
-                top:-180px; right: -230px;
+                top: -180px;
+                right: -230px;
                 background-color: $couleur-tertiaire;
                 border-radius: 3px;
                 width: 70px;
                 padding: 5px;
                 margin-bottom: -65px;
-                } 
-            .p__note-enchantee{
-               
-                top:-260px; 
-            } 
+            }
+
+            .p__note-enchantee {
+
+                top: -260px;
+            }
         }
-        
-        &__texte{
+
+        &__texte {
             background-color: white;
             height: 75px;
             padding-left: 10px;
-            
-            h3{
+
+            h3 {
                 margin-bottom: -15px;
             }
-            
+
         }
 
     }
 }
-

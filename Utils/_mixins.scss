@@ -3,6 +3,7 @@
 }
 @mixin degrader{
     background: linear-gradient(to bottom right, $couleur-secondaire ,$couleur-primaire);
+
 }
 @mixin assombrir($color) {
      color: darken($color,35%);
