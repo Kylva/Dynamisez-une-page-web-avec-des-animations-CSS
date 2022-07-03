@@ -1,0 +1,119 @@
+.image-menu {
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+    max-height: 300px;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -60px;
+    padding-bottom: 60px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: $couleur-section-grise;
+
+    .boutton {
+        margin-top: 40px;
+    }
+
+    &__titre {
+
+        .coeur-remplissage {
+            margin-top: 30px;
+
+            &__remplissage-coeur {
+                background-image: url(./images/coeur-menu.png);
+            }
+        }
+    }
+
+    h2 {
+        font-weight: normal;
+        font-size: medium;
+        text-transform: uppercase;
+        border-bottom: 3px solid $couleur-tertiaire;
+        width: 45px;
+        padding-bottom: 5px;
+    }
+}
+
+.card-menu {
+    display: flex; 
+    background-color: white;
+    border-radius: 10px;
+    @include ombre-exterieur;
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+    &__texte {
+        width: 75%;
+        h3 {
+            font-size: 15px;
+            margin-bottom: -10px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    &__prix {
+       align-self: flex-end;
+        color: #363636;
+        font-weight: 700;
+        position: relative;
+        left: 50px;
+        bottom: 0px;
+        transform-origin: right;
+        transition: transform 300ms 100ms linear;
+    }
+    
+    &__remplissage{
+        display: flex;
+        background-color: $couleur-tertiaire;
+        width: 72px;
+        height: auto;
+        padding-right: 0;
+        border-radius: 0 10px 10px 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 300ms 100ms linear;
+        i{
+            color: #fff;
+            font-size: 1.6rem;
+            margin: auto;
+            transform: rotate(0deg);
+            transition: transform 300ms 100ms linear;
+        }
+    }
+    &:hover .card-menu__remplissage{
+        transform: scaleX(1);
+    }
+    &:hover i{
+        transform: rotate(360deg);
+    }
+    &:hover .card-menu__prix{
+        transform: translateX(-72px);
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}

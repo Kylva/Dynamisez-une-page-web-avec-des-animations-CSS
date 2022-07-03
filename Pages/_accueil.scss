@@ -46,7 +46,7 @@
 
 .fonctionnement {
     margin-top: 45px;
-    padding-left: 25px;
+    padding-left: $padding-left;
     margin-right: 25px;
 
     h2 {
@@ -99,7 +99,7 @@
 }
 
 .restaurant {
-    padding-left: 25px;
+    padding-left: $padding-left;
     padding-right: 25px;
     background-color: $couleur-section-grise;
     margin-top: 70px;

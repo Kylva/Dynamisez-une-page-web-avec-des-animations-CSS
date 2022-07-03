@@ -12,7 +12,7 @@
         z-index: 1;
         transform: scaleY(0);
         transform-origin: bottom;
-        transition: transform 200ms ease-in-out;
+        transition: transform 400ms ease-in-out;
         
         }
     &__remplissage-coeur{
@@ -22,9 +22,8 @@
         height: 40px;
         background-size: 40px 40px;
         background-image: url(./images/coeur.png);
-        &:active + .coeur-remplissage__coeur{
+        &:hover + .coeur-remplissage__coeur{
             transform: scaleY(1);
-            animation-fill-mode: forwards;
         }
     }
     

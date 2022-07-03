@@ -1,9 +1,25 @@
-footer{
-background-color: rgb(53, 53, 53);
-color: white;
-padding-top: 10px;
-}
-.logo-texte{
-    display: flex;
-    align-items: center;
+footer {
+    background-color: rgb(53, 53, 53);
+     padding-top: 30px;
+     padding-bottom: 30px;
+    img {
+        height: 1.3rem;
+        filter: invert(100%);
+      margin-left: 40px;
+    }
+    ul {
+        margin: 20px auto;
+    }
+    li {
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    i {
+        margin-right: 10px;
+    }
+   
 }
