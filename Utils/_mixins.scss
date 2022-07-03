@@ -1,5 +1,5 @@
-@mixin ombre-exterieur {
-    box-shadow: 0px 3px 6px  $couleur-ombres ;
+@mixin ombre-exterieur( $ombre1: 0px, $ombre2: 3px , $ombre3: 6px, $color: $couleur-ombres) {
+    box-shadow: $ombre1 $ombre2 $ombre3 $color;
 }
 @mixin degrader{
     background: linear-gradient(to bottom right, $couleur-secondaire ,$couleur-primaire);

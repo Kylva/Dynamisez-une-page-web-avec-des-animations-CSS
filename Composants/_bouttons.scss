@@ -12,6 +12,7 @@
     @include ombre-exterieur;
     @include degrader;
     &:hover{
-        transform: scale(1.1);
-    }
+        background: linear-gradient(170deg, lighten($couleur-secondaire, 5%), lighten($couleur-primaire, 8%));
+        @include ombre-exterieur(0px, 10px, 20px, darken($couleur-ombres, 30%));
+    }      
 }
