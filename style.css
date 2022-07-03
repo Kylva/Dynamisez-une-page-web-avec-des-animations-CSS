@@ -303,8 +303,20 @@ footer i {
   padding-right: 15px;
   background-color: rgb(246, 246, 246);
 }
-.menu .boutton {
-  margin-top: 40px;
+.menu__service {
+  opacity: 0%;
+}
+.menu__service:nth-child(1) {
+  animation: defile 800ms 100ms ease-in-out forwards;
+}
+.menu__service:nth-child(2) {
+  animation: defile 800ms 400ms ease-in-out forwards;
+}
+.menu__service:nth-child(3) {
+  animation: defile 800ms 800ms ease-in-out forwards;
+}
+.menu__service:nth-child(4) {
+  animation: defile 800ms 1000ms ease-in-out forwards;
 }
 .menu__titre .coeur-remplissage {
   margin-top: 30px;
@@ -323,6 +335,7 @@ footer i {
 
 .card-menu {
   display: flex;
+  flex-wrap: nowrap;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 3px 6px rgb(202, 202, 202);
@@ -330,14 +343,22 @@ footer i {
   margin-bottom: 20px;
 }
 .card-menu__texte {
+  overflow: hidden;
+  text-overflow: ellipsis;
   width: 75%;
 }
 .card-menu__texte h3 {
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: -10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .card-menu__texte p {
   font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .card-menu__prix {
   align-self: flex-end;
@@ -348,6 +369,8 @@ footer i {
   bottom: 0px;
   transform-origin: right;
   transition: transform 300ms 100ms linear;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card-menu__remplissage {
   display: flex;
@@ -378,6 +401,17 @@ footer i {
 }
 .card-menu:hover {
   cursor: pointer;
+}
+
+@keyframes defile {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
