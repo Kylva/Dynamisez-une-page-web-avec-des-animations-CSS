@@ -273,6 +273,13 @@ footer i {
   margin-bottom: -15px;
 }
 
+.fa-arrow-left {
+  position: relative;
+  left: -100px;
+  top: -15px;
+  font-size: 20px;
+}
+
 .image-menu {
   display: flex;
   width: 100%;
