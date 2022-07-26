@@ -24,7 +24,8 @@
 
 .menu {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -36,7 +37,18 @@
     padding-left: 15px;
     padding-right: 15px;
     background-color: $couleur-section-grise;
+    &__titre{
+        width: 100%;
+    }
+    &__boutton{ 
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
     &__service{
+        
         opacity: 0%;
         &:nth-child(1){
             animation: defile 800ms 100ms ease-in-out forwards;
@@ -61,6 +73,9 @@
             }
         }
     }
+    h1{
+        font-family: "Shrikhand";
+    }
 
     h2 {
         font-weight: normal;
@@ -74,6 +89,9 @@
 }
 
 .card-menu {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 350px;
     display: flex;
     flex-wrap: nowrap; 
     background-color: white;
@@ -85,14 +103,15 @@
     &__texte {
         overflow: hidden;
         text-overflow: ellipsis;
+        width: 250px;
         
-        width: 75%;
         h3 {
             font-size: 17px;
             margin-bottom: -10px;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;   
+            white-space: nowrap;
+            transition: padding-right 300ms 100ms linear;   
         }
 
         p {
@@ -100,6 +119,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            transition: padding-right 300ms 100ms linear;
         }
     }
 
@@ -142,6 +162,14 @@
     }
     &:hover .card-menu__prix{
         transform: translateX(-72px);
+    }
+    &:hover .card-menu__texte{
+        p{
+            padding-right: 72px;
+        }
+        h3{
+            padding-right: 72px;
+        }
     }
     &:hover{
         cursor: pointer;

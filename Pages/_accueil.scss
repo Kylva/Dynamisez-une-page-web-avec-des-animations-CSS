@@ -6,25 +6,24 @@
     padding-bottom: 56px;
 
     &__localisation {
-        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: $couleur-fond-ville;
         height: 50px;
-
-        i {
-            margin-left: 25%;
-        }
-
         input {
-            margin-left: 10px;
+            padding-left: -30px;
             background-color: $couleur-fond-ville;
             border: none;
             color: black;
             font-size: 14px;
             font-weight: bold;
-
+            text-align: center;
+            width: 100px;
+        }
+        i{
+            text-align: center;
+           
         }
     }
 
@@ -48,18 +47,28 @@
     margin-top: 45px;
     padding-left: $padding-left;
     margin-right: 25px;
-
+    
+    
+    &__global{
+       display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
     h2 {
         margin-bottom: 30px;
+        width: 100%;
     }
 
     &__card {
         width: 100%;
+        max-width: 400px;
         height: 70px;
         display: flex;
         align-items: center;
         background-color: $couleur-section-grise;
         margin-bottom: 30px;
+        
         border-radius: 20px;
         @include ombre-exterieur;
 
@@ -95,10 +104,23 @@
             }
 
         }
+
+        &:hover {
+            i {
+                color: $couleur-primaire;
+            }
+            background-color: lighten($couleur-primaire, 35%);
+
+            
+        }
     }
+
 }
 
 .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding-left: $padding-left;
     padding-right: 25px;
     background-color: $couleur-section-grise;
@@ -106,7 +128,11 @@
     padding-top: 35px;
     padding-bottom: 50px;
 
+    h2{
+        width: 100%;
+    }
     &__card {
+        max-width: 350px;
         @include ombre-exterieur;
         display: flex;
         flex-direction: column;
@@ -138,8 +164,8 @@
                 font-weight: bold;
                 @include assombrir($couleur-tertiaire);
                 position: relative;
-                top: -180px;
-                right: -230px;
+                top: -200px;
+                right: -250px;
                 background-color: $couleur-tertiaire;
                 border-radius: 3px;
                 width: 70px;
@@ -149,7 +175,7 @@
 
             .p__note-enchantee {
 
-                top: -260px;
+                top: -300px;
             }
         }
 

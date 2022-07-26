@@ -1,4 +1,5 @@
 footer {
+    
     background-color: rgb(53, 53, 53);
      padding-top: 30px;
      padding-bottom: 30px;
@@ -8,9 +9,13 @@ footer {
       margin-left: 40px;
     }
     ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
         margin: 20px auto;
     }
     li {
+        width: 400px;
         list-style-type: none;
         margin-bottom: 10px;
     }
