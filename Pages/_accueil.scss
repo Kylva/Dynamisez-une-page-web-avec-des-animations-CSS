@@ -126,11 +126,15 @@
     margin-top: 70px;
     padding-top: 35px;
     padding-bottom: 50px;
-
+    a{
+        width: 100%;
+        max-width: 350px;
+    }
     h2{
         width: 100%;
     }
     &__card {
+        width: 100%;
         max-width: 350px;
         @include ombre-exterieur;
         display: flex;
@@ -191,3 +195,4 @@
 
     }
 }
+
